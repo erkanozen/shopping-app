@@ -1,0 +1,64 @@
+.hero-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+}
+
+.hero-info-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 30%;
+}
+
+.hero-head{
+    font-size: 32px;
+}
+
+.hero-info{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.hero-signup{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 140px;
+    padding: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.hero-image{
+    height: 400px;
+    width: 100%;
+}
+
+@media(max-width: 910px ){
+    .hero-container{
+        justify-content: center;
+    }
+    .hero-info-container{
+        margin-left: 30px;
+    }
+    .hero-info{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px ){
+    .hero-head{
+        font-size:22px;
+    }
+    .hero-info{
+        font-size: 12px;
+    }
+}
